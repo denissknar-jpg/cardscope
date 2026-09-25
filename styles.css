@@ -687,6 +687,9 @@ tbody tr:hover { background: rgba(255,255,255,.05); }
 .service-hero-stats { display: flex; flex-wrap: wrap; gap: 34px; margin-top: 30px; }
 .service-hero-stats span { display: grid; gap: 4px; color: #b7cbc1; font-size: .83rem; }
 .service-hero-stats strong { color: #f2c78f; font-family: "Space Grotesk", sans-serif; font-size: 1.8rem; }
+.service-detail-heading { display: flex; align-items: center; gap: 18px; margin-top: 26px; }
+.service-detail-heading h1 { margin-top: 14px; }
+.service-detail-heading .service-logo-large { flex: 0 0 72px; }
 .service-catalog { background: #f6f7f3; }
 .service-heading { display: flex; justify-content: space-between; align-items: end; gap: 30px; }
 .service-search { min-width: min(100%, 350px); }
@@ -698,7 +701,12 @@ tbody tr:hover { background: rgba(255,255,255,.05); }
 .light-reset { color: #2f6656; border-color: #ccd8d0; }
 .light-reset:hover { background: #e4efe4; }
 .service-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.service-card-results { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
 .service-card { display: flex; flex-direction: column; min-height: 260px; padding: 22px; border: 1px solid #e0e8e1; border-radius: 16px; background: #fff; box-shadow: 0 10px 28px rgba(23,60,52,.06); }
+.service-card-link { display: block; color: inherit; text-decoration: none; transition: transform .2s ease, box-shadow .2s ease; }
+.service-card-link:hover { transform: translateY(-3px); box-shadow: 0 16px 34px rgba(23,60,52,.12); }
+.service-icon { display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 12px; background: #e7efe7; color: #173c34; overflow: hidden; }
+.service-icon img { width: 40px; height: 40px; border-radius: 8px; object-fit: contain; background: #fff; }
 .service-card-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
 .service-logo-large { flex-basis: 54px; width: 54px; height: 54px; }
 .service-category-label { color: #6e7e76; font-size: .72rem; text-align: right; }
@@ -718,14 +726,16 @@ tbody tr:hover { background: rgba(255,255,255,.05); }
 .service-empty { grid-column: 1 / -1; padding: 44px; border: 1px dashed #ccd8d0; border-radius: 16px; color: #6e7e76; }
 
 @media (max-width: 920px) {
-  .service-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .service-grid, .service-card-results { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 680px) {
   .service-heading, .service-controls { align-items: stretch; flex-direction: column; }
   .service-search { min-width: 0; }
-  .service-grid { grid-template-columns: 1fr; }
+  .service-grid, .service-card-results { grid-template-columns: 1fr; }
   .service-controls .light-reset { align-self: flex-start; }
+  .service-detail-heading { align-items: flex-start; }
+  .service-detail-heading .service-logo-large { flex-basis: 54px; width: 54px; height: 54px; }
 }
 
 .service-logo {
@@ -906,8 +916,8 @@ tbody tr:hover { background: rgba(255,255,255,.05); }
   .detail-heading h1 { font-size: 2.85rem; }
 }
 .detail-hero { padding: 58px 0 62px; background: #173c34; color: #f6f7f3; }
-.back-link { display: inline-block; color: #bdd1c7; margin-bottom: 42px; font-size: .9rem; }
-.back-link:hover { color: #fff; }
+.back-link { display: inline-flex; align-items: center; gap: 8px; width: fit-content; margin-bottom: 42px; padding: .55rem .75rem; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; color: #c9e6cd; background: rgba(255,255,255,.06); font-size: .86rem; text-decoration: none; transition: background .2s ease, border-color .2s ease, transform .2s ease; }
+.back-link:hover { border-color: rgba(242,199,143,.6); background: rgba(242,199,143,.12); color: #fff; transform: translateX(-2px); }
 .detail-heading { display: flex; justify-content: space-between; align-items: end; gap: 30px; }
 .detail-heading h1 { margin: 18px 0 10px; font-family: "Space Grotesk", sans-serif; font-size: clamp(2.5rem, 6vw, 5rem); letter-spacing: -.055em; }
 .detail-heading p { margin: 0; color: #bdd1c7; font-size: 1.1rem; }

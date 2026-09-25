@@ -1,0 +1,12 @@
+{
+  "name": "cardscope",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node scripts/check-compatibility.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0"
+  }
+}
