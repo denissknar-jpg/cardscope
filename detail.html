@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Карточка сервиса — CardScope</title>
+    <meta name="description" content="Подробные условия виртуальной карты и кнопка заказа." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="detail-page">
+    <header class="topbar">
+      <div class="container nav">
+        <a class="brand" href="index.html#top"><span class="brand-mark">C</span><span>CardScope</span></a>
+        <nav class="nav-links" aria-label="Основная навигация">
+          <a href="index.html#compare">Виртуальные карты</a>
+          <a href="index.html#compare">Сравнение</a>
+           <a href="services.html">Подбор по сервису</a>
+          <a href="index.html#categories">Разделы</a>
+        </nav>
+        <a class="nav-button" href="index.html#compare">Вернуться к сравнению</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="detail-hero">
+        <div class="container" id="detailHero">
+          <a class="back-link" href="index.html#compare">← Назад к сравнению</a>
+          <div class="loading">Загрузка условий сервиса...</div>
+        </div>
+      </section>
+      <section class="section detail-content" id="detailContent"></section>
+    </main>
+
+    <footer class="footer"><div class="container footer-inner"><a class="brand" href="index.html#top"><span class="brand-mark">C</span><span>CardScope</span></a><p>Партнёрская ссылка будет добавлена после предоставления.</p></div></footer>
+    <script src="detail.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+[
+  {
+    "category_id": "virtual_cards",
+    "name": "Виртуальные карты",
+    "slug": "virtual-cards",
+    "description": "Сравнение виртуальных карт по комиссиям, условиям и лимитам.",
+    "sort_order": 1,
+    "is_active": true
+  },
+  {
+    "category_id": "debit_cards",
+    "name": "Дебетовые карты",
+    "slug": "debit-cards",
+    "description": "Дебетовые карты с кешбэком, комиссиями и лимитами.",
+    "sort_order": 2,
+    "is_active": true
+  },
+  {
+    "category_id": "credit_cards",
+    "name": "Кредитные карты",
+    "slug": "credit-cards",
+    "description": "Кредитные карты с льготным периодом и бонусами.",
+    "sort_order": 3,
+    "is_active": true
+  },
+  {
+    "category_id": "deposits",
+    "name": "Вклады",
+    "slug": "deposits",
+    "description": "Сравнение вкладов по ставкам и срокам.",
+    "sort_order": 4,
+    "is_active": true
+  },
+  {
+    "category_id": "sim_cards",
+    "name": "SIM-карты",
+    "slug": "sim-cards",
+    "description": "Мобильные тарифы и SIM-предложения.",
+    "sort_order": 5,
+    "is_active": true
+  },
+  {
+    "category_id": "service_payments",
+    "name": "Оплата сервисов",
+    "slug": "service-payments",
+    "description": "Платежные решения для подписок и сервисов.",
+    "sort_order": 6,
+    "is_active": true
+  }
+]

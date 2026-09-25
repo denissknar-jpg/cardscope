@@ -1,0 +1,11 @@
+# Local runtime and editor files
+.vscode/
+*.log
+
+# Saved reference page and downloaded website assets
+Плати в Пути — виртуальные карты Visa и Mastercard, обзор сервиса — Paybeam.html
+Плати в Пути — виртуальные карты Visa и Mastercard, обзор сервиса — Paybeam_files/
+
+# Temporary Python/cache files
+__pycache__/
+*.pyc

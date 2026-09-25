@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CardScope — сравнение виртуальных карт</title>
+    <meta name="description" content="Сравнение виртуальных карт по стоимости выпуска, комиссиям, валютам и возможностям оплаты." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <a class="brand" href="#top"><span class="brand-mark">C</span><span>CardScope</span></a>
+        <nav class="nav-links" aria-label="Основная навигация">
+          <a href="#compare">Виртуальные карты</a>
+          <a href="services.html">Подбор по сервису</a>
+          <a href="#categories">Разделы</a>
+          <a href="#about">Методика</a>
+        </nav>
+        <a class="nav-button" href="#compare">Открыть сравнение</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Карты для онлайн-платежей</span>
+            <h1>Сравните виртуальные карты по реальным условиям</h1>
+            <p>Собрали предложения в одну понятную таблицу: выпуск, обслуживание, пополнение, валюты, поддержка кошельков и отзывы.</p>
+            <div class="hero-actions">
+              <a class="primary" href="#compare">Смотреть рейтинг</a>
+              <a class="secondary" href="#compare">Открыть сравнение</a>
+            </div>
+            <ul class="hero-metrics">
+              <li><strong>30</strong><span>сервисов в таблице</span></li>
+              <li><strong>13</strong><span>критериев сравнения</span></li>
+              <li><strong>1</strong><span>единый рейтинг</span></li>
+            </ul>
+          </div>
+          <div class="hero-card">
+            <div class="hero-card-top"><span>Лидер по отзывам</span><span class="status review">Проверка</span></div>
+            <h2>Yello Card</h2>
+            <div class="hero-rating"><strong>5.0</strong><span>140 отзывов</span></div>
+            <div class="hero-facts"><span><b>от 1 699 ₽</b> выпуск</span><span><b>0 ₽</b> пополнение</span><span><b>USD, EUR</b> валюты</span></div>
+            <div class="hero-card-footer"><span>Apple Pay · Google Pay</span><span>Европа</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section compare" id="compare">
+        <div class="container">
+          <div class="section-heading"><span class="eyebrow">Данные из Rate.xlsx</span><h2>Виртуальные карты</h2><p class="section-note">Сравнение показывает исходные значения без самостоятельной интерпретации условий. Используйте фильтры в заголовках таблицы, чтобы найти подходящие варианты.</p></div>
+          <div class="comparison-toolbar"><input id="tableSearch" type="search" placeholder="Поиск по названию и особенностям" aria-label="Поиск в таблице"><label>Сортировка<select id="tableSort"><option value="rank">По позиции</option><option value="rating">По рейтингу</option><option value="reviews">По отзывам</option><option value="issue">По стоимости выпуска</option></select></label><button id="resetFilters" class="reset-filters" type="button">Сбросить фильтры</button></div>
+          <div class="table-wrap"><table><thead><tr><th>Сервис</th><th>Выпуск</th><th>Обслуживание</th><th>Пополнение</th><th>Apple Pay / Google Pay</th><th>Рейтинг</th><th>Действия</th></tr><tr class="filter-row"><th><input data-column-filter="name" type="search" placeholder="Название"></th><th><input data-column-filter="issue" type="search" placeholder="Например, ₽"></th><th><input data-column-filter="service" type="search" placeholder="Обслуживание"></th><th><input data-column-filter="topup" type="search" placeholder="Пополнение"></th><th><select data-column-filter="wallets"><option value="">Все варианты</option><option value="Да / Да">Да / Да</option><option value="Да / Нет">Да / Нет</option><option value="Нет / Да">Нет / Да</option><option value="Нет / Нет">Нет / Нет</option></select></th><th><select data-column-filter="rating"><option value="">Любой рейтинг</option><option value="5">от 5.0</option><option value="4.8">от 4.8</option><option value="4.5">от 4.5</option><option value="4">от 4.0</option></select></th><th></th></tr></thead><tbody id="comparisonBody"></tbody></table></div>
+        </div>
+      </section>
+
+      <section class="section categories" id="categories">
+        <div class="container"><div class="section-heading"><span class="eyebrow">Разделы проекта</span><h2>Вокруг карты соберём полезную экосистему</h2></div><div class="category-grid">
+          <article class="category-item"><span class="category-icon">01</span><h3>Виртуальные карты</h3><p>Основной каталог с комиссиями, валютами, сроком действия и Apple Pay / Google Pay.</p><a href="#compare">Открыть сравнение →</a></article>
+          <article class="category-item"><span class="category-icon">02</span><h3>Подбор по сервису</h3><p>Найдите ChatGPT, Booking, Steam или другой зарубежный сервис и сравните доступность карт.</p><a href="services.html">Открыть каталог →</a></article>
+          <article class="category-item"><span class="category-icon">03</span><h3>Дебетовые карты</h3><p>Банковские предложения по обслуживанию, бонусам и международным операциям.</p><a href="#categories">Скоро в работе →</a></article>
+          <article class="category-item"><span class="category-icon">04</span><h3>Вклады и SIM</h3><p>Ставки, сроки, тарифы, роуминг и другие решения для цифровых расходов.</p><a href="#categories">Скоро в работе →</a></article>
+        </div></div>
+      </section>
+
+      <section class="section about" id="about"><div class="container about-grid"><div><span class="eyebrow">Методика</span><h2>Сравнение должно помогать принять решение, а не прятать условия</h2></div><div class="about-list"><div><strong>1</strong><p>Собираем исходные условия сервисов в едином формате.</p></div><div><strong>2</strong><p>Показываем рядом стоимость выпуска, комиссии, валюты, кошельки и отзывы.</p></div><div><strong>3</strong><p>Отмечаем статус проверки и готовим данные к регулярному обновлению.</p></div></div></div></section>
+    </main>
+
+    <footer class="footer"><div class="container footer-inner"><a class="brand" href="#top"><span class="brand-mark">C</span><span>CardScope</span></a><p>Сравнительный каталог виртуальных карт. Данные требуют проверки перед публикацией.</p></div></footer>
+    <script src="app.js"></script>
+  </body>
+</html>

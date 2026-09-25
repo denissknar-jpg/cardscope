@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Подобрать виртуальную карту по сервису — CardScope</title>
+    <meta name="description" content="Подбор виртуальной карты по зарубежному сервису, подписке или магазину." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar"><div class="container nav"><a class="brand" href="index.html#top"><span class="brand-mark">C</span><span>CardScope</span></a><nav class="nav-links" aria-label="Основная навигация"><a href="index.html#compare">Виртуальные карты</a><a href="services.html" aria-current="page">Подбор по сервису</a><a href="index.html#categories">Разделы</a><a href="index.html#about">Методика</a></nav><a class="nav-button" href="index.html#compare">Сравнить карты</a></div></header>
+    <main>
+      <section class="service-hero"><div class="container"><span class="eyebrow">Новый критерий сравнения</span><h1>Какая карта подойдёт для нужного сервиса?</h1><p>Найдите зарубежный сервис, подписку, магазин или инструмент и посмотрите, какие варианты карт отмечены в источниках как совместимые.</p><div class="service-hero-stats"><span><strong id="serviceCount">0</strong> сервисов</span><span><strong id="categoryCount">0</strong> категорий</span><span><strong>2</strong> источника</span></div></div></section>
+      <section class="section service-catalog"><div class="container"><div class="service-heading"><div><span class="eyebrow">Каталог совместимости</span><h2>Выберите зарубежный сервис</h2><p class="section-note">Статус собран по страницам Plati v Puti и Yello Card. Перед оплатой проверьте условия конкретной карты и тарифа.</p></div><div class="service-search"><input id="serviceSearch" type="search" placeholder="Например, ChatGPT, Steam или Booking" aria-label="Поиск сервиса" /></div></div><div class="service-controls"><div id="serviceCategories" class="service-categories" aria-label="Категории сервисов"></div><button id="resetServiceFilters" class="reset-filters light-reset" type="button">Сбросить</button></div><div id="serviceGrid" class="service-grid"></div></div></section>
+    </main>
+    <footer class="footer"><div class="container footer-inner"><a class="brand" href="index.html#top"><span class="brand-mark">C</span><span>CardScope</span></a><p>Совместимость требует проверки перед оплатой.</p></div></footer>
+    <script src="services.js"></script>
+  </body>
+</html>
